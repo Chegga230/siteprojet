@@ -1,0 +1,637 @@
+/* Barre de navigation */
+header {
+
+    background-color: #D1A401;
+    padding: 0.5rem 0; 
+  position: fixed; /*fixation de la barre de navigation*/
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li.logo {
+  margin: 0 50px;
+}
+
+nav ul li.logo img {
+  height: 80px; 
+  display: block;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  border: none;
+  border-radius: 5px; 
+  display: inline-block;
+  text-align: center;
+}
+/* Section d'accueil */
+#accueil {
+  /* Styles de base pour la section Accueil */
+#accueil {
+  padding: 20px;
+  text-align: center;
+  background-color: #ffffff; /* Vous pouvez ajuster la couleur de fond */
+}
+
+#accueil h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#accueil p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+#accueil img {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Responsivité pour les tablettes (max-width: 768px) */
+@media (max-width: 768px) {
+  #accueil h1 {
+    font-size: 30px; /* Réduire la taille du titre */
+  }
+
+  #accueil p {
+    font-size: 16px; /* Réduire la taille du sous-titre */
+  }
+
+  #accueil img {
+    max-width: 90%; /* Ajuster l'image à 90% de la largeur */
+  }
+}
+
+/* Responsivité pour mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  #accueil h1 {
+    font-size: 24px; /* Réduire davantage la taille du titre */
+  }
+
+  #accueil p {
+    font-size: 14px; /* Réduire davantage la taille du sous-titre */
+  }
+
+  #accueil img {
+    max-width: 100%; /* Ajuster l'image à 100% de la largeur */
+  }
+}
+
+    background-color: #883D11;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre horizontalement */
+    justify-content: center; /* Centre verticalement */
+    text-align: center;
+    padding: 50px 20px; /* Espace autour du contenu */
+  }
+  
+  .accueil-contenu h1 {
+    font-size: 3rem; /* Taille du titre principal */
+   margin-bottom: 20px;  /* Espacement entre le titre et le sous-titre */
+  }
+  
+  .accueil-contenu p {
+    
+    font-size: 1.5rem; /* Taille du sous-titre */
+    font-weight: 300; /* Texte plus léger */
+    margin-top: -20px;
+  }
+  
+  .image-accueil {
+    margin-top: -10px; 
+  }
+  
+  .image-accueil img {
+    width: 165%; 
+    max-height: 500px; 
+    object-fit: cover;
+    margin-left: -45%; 
+    margin-right: -45%;
+    border-radius: 10px; 
+  } 
+  .image-accueil {
+    margin-bottom: -40px; /* Ajoute de l'espace sous l'image */
+    text-align: center; /* Centre le texte sous l'image */
+  }
+  
+  .image-accueil .texte-sous-image {
+    margin-top: 20px; /* Ajoute un espace entre l'image et le texte */
+    color: #FFFFFF; /* Texte blanc */
+  }
+  
+  .image-accueil .texte-sous-image h2 {
+    font-size: 1.5rem; /* Taille pour "Le fleuve Niger" */
+    margin-bottom: 10px; /* Espace entre les deux lignes */
+  }
+  
+  .image-accueil .texte-sous-image p {
+    font-size: 1.8rem; /* Taille pour "Découvrons ensemble..." */
+    font-weight: 300; /* Texte léger */
+  }
+  /* Section "À propos" */
+#a-propos {
+    background-color: #acacac; /* Fond gris foncé */
+    padding: 50px 20px; /* Espacement autour de la section */
+    margin-top: 0; /* Enlever la marge en haut */
+  }
+  
+  /* Barre de navigation noire avec texte blanc */
+  #a-propos .barre-navigation {
+    /* Style de la barre de navigation */
+#a-propos {
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Style des boutons de la barre de navigation */
+#a-propos a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#a-propos a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Responsivité pour les petits écrans (tablette et mobile) */
+@media screen and (max-width: 768px) {
+  #a-propos {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  #a-propos a {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #a-propos {
+    padding: 8px;
+  }
+
+  #a-propos a {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+    background-color: #000000; /* Fond noir */
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: -50px; /* Pas d'espace en haut, barre collée à l'accueil */
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  
+  #a-propos .barre-navigation h2 {
+    color: #ffffff; /* Texte blanc */
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  /* Contenu de la section "À propos" */
+  .contenu-a-propos {
+    display: flex; /* Disposition en ligne */
+    align-items: center; /* Centrer verticalement */
+    justify-content: space-between; /* Les images aux extrémités */
+    padding: 20px 0; /* Ajouter un peu d'espacement vertical */
+  }
+  
+  /* Style des images à gauche et à droite */
+  .contenu-a-propos .image-gauche img {width: 300px; /* Augmenter la largeur des images */
+    height: auto; /* Conserver les proportions */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-top: -22px; /* Marges verticales ajoutées */
+    margin-bottom: -38px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  .contenu-a-propos .image-droite img {
+    width: 300px; /* Augmenter la largeur des images */
+    height: 450px; /* Conserver les proportions */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Légère ombre */
+    margin-top: -20px; /* Marges verticales ajoutées */
+    margin-bottom: -38px;
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  
+  /* Texte centré entre les images */
+  .contenu-a-propos .texte-centre {
+    
+    flex: 1; /* Occupe l'espace restant */
+    text-align: center; /* Texte centré */
+    margin: 0 20px; /* Espacement entre le texte et les images */
+    margin-top: -20px;
+  }
+  
+  .contenu-a-propos .texte-centre p {
+    color: #000000; /* Texte blanc */
+    font-size: 1.8rem; /* Taille du texte */
+    line-height: 1.5; /* Espacement entre les lignes */
+  }
+  /* Section Nos Articles */
+#nos-articles {
+  /* Styles de base pour la section Nos Articles */
+#nos-articles {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+#nos-articles h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Conteneur de toutes les images/articles */
+.articles-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);  /* 4 images par rangée */
+  gap: 20px;
+}
+
+/* Chaque article */
+.article {
+  text-align: center;
+}
+
+.article img {
+  width: 100%;   /* Assurez-vous que les images sont responsive */
+  height: auto;
+  max-width: 200px; /* Limiter la taille des images */
+  margin: 0 auto;
+}
+
+.article p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Responsivité pour les tablettes (max-width: 768px) */
+@media (max-width: 768px) {
+  .articles-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 images par rangée sur tablette */
+  }
+
+  .article img {
+    max-width: 150px; /* Réduire la taille des images */
+  }
+
+  .article p {
+    font-size: 12px; /* Réduire la taille du texte */
+  }
+}
+
+/* Responsivité pour mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .articles-container {
+    grid-template-columns: 1fr; /* 1 image par rangée sur mobile */
+  }
+
+  .article img {
+    max-width: 100%; /* Les images occupent toute la largeur */
+  }
+
+  .article p {
+    font-size: 12px;
+  }
+}
+
+  background-color: #abaaaa; /* Fond gris foncé */
+  color: white; /* Texte Noir pour la section */
+  padding: 20px 0; /* Espacement autour du contenu */
+  text-align: center;
+  padding-bottom: -10px;
+}
+
+/* Barre de navigation pour Nos Articles */
+.barre-navigation-nos-articles {
+  background-color: white; /* Couleur blanche pour la barre */
+  color: black; /* Texte noir sur la barre */
+  padding: -80px 0; /* Espacement vertical de la barre */
+  text-align: center; /* Centre le texte "Nos articles" */
+  font-size: 18px; /* Taille du texte */
+  font-weight: bold; /* Met en gras le texte */
+  border-bottom: 2px solid #333333; /* Optionnel : ajout d'une bordure pour la démarcation */
+  margin-top: -80px;
+}
+
+/* Conteneur de la galerie */
+.nos-articles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+  gap: 20px; /* Espacement entre les éléments */
+  justify-items: center; /* Centre les éléments horizontalement */
+}
+
+/* Style des images */
+.photo img {
+  width: 100%; /* La largeur s'ajuste au conteneur */
+  aspect-ratio: 1 / 1; /* Force un ratio 1:1 pour des images carrées */
+  object-fit: cover; /* Remplissage complet sans déformation */
+  border: 1px solid #ccc; /* Bordure autour des images */
+  border-radius: 5px; /* Coins légèrement arrondis */
+}
+
+/* Texte sous les images */
+.photo p {
+  margin-top: 10px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+
+/* section evenements */
+
+.nos-evenements-section {
+  /* Styles de base pour la section Événements */
+#nos-evenements {
+  padding: 20px;
+  text-align: center;
+  background-color: black; /* Fond noir */
+  color: white; /* Texte blanc */
+}
+
+#nos-evenements h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#nos-evenements .events-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  gap: 20px;
+  justify-items: center;
+}
+
+#nos-evenements .event img {
+  width: 100%;
+  max-width: 200px; /* Taille maximale pour les images */
+  aspect-ratio: 1; /* Forme carrée */
+  object-fit: cover;
+  border-radius: 10px; /* Coins arrondis */
+}
+
+#nos-evenements .event p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Responsivité pour les tablettes (max-width: 768px) */
+@media (max-width: 768px) {
+  #nos-evenements h2 {
+    font-size: 28px; /* Réduction du titre */
+  }
+
+  #nos-evenements .events-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  }
+
+  #nos-evenements .event img {
+    max-width: 150px; /* Réduction de la taille des images */
+  }
+
+  #nos-evenements .event p {
+    font-size: 14px; /* Réduction de la taille du texte */
+  }
+}
+
+/* Responsivité pour les mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+  #nos-evenements h2 {
+    font-size: 24px; /* Réduction du titre */
+  }
+
+  #nos-evenements .events-container {
+    grid-template-columns: 1fr; /* 1 colonne */
+  }
+
+  #nos-evenements .event img {
+    max-width: 120px; /* Réduction supplémentaire des images */
+  }
+
+  #nos-evenements .event p {
+    font-size: 12px; /* Texte encore plus petit */
+  }
+}
+
+  background-color: #000; /* Fond noir */
+  color: #fff; /* Texte blanc */
+  padding: 40px 20px;
+  margin-top: -10px;
+}
+
+/* Barre de navigation */
+.nav-bar {
+  background-color: #fff; /* Fond blanc */
+  text-align: center;
+  padding: 15px 0;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  margin-left:-20px;
+  margin-right:-20px;
+}
+
+.nav-bar h2 {
+  color: #000; /* Texte noir */
+  font-size: 24px;
+  margin: 0;
+}
+
+/* Galerie des événements */
+.evenements-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colonnes */
+  gap: 20px; /* Espacement entre les éléments */
+  justify-items: center;
+}
+
+/* Style des images */
+.event img {
+  width: 100%; /* Prend toute la largeur */
+  aspect-ratio: 1 / 1; /* Carré */
+  object-fit: cover; /* Ajuste l'image sans déformer */
+  border: 2px solid #fff; /* Bordure blanche */
+  border-radius: 5px; /* Coins légèrement arrondis */
+}
+
+#nos-evenements .event video {
+  width: 100%;
+  aspect-ratio: 1/1; /* Format 
+  object-fit: cover; /* Adapter le contenu au conteneur */
+  border: 2px solid #fff;
+  border-radius: 5px; /* Coins arrondis comme les images */
+}
+/* Texte sous les images */
+.event p {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Section Contact */
+
+.contact-section {
+  /* Styles de base pour la section Contact */
+#contact {
+  padding: 20px;
+  text-align: center;
+  background-color: #8B4513; /* Marron */
+  color: white;
+}
+
+#contact h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+#contact .social-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#contact .social-icons img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Rond pour les icônes */
+  transition: transform 0.3s;
+}
+
+#contact .social-icons img:hover {
+  transform: scale(1.1); /* Effet au survol */
+}
+
+/* Responsivité pour les tablettes (max-width: 768px) */
+@media (max-width: 768px) {
+  #contact h2 {
+    font-size: 28px; /* Réduction du titre */
+  }
+
+  #contact p {
+    font-size: 16px; /* Réduction du texte */
+  }
+
+  #contact .social-icons img {
+    width: 60px; /* Réduction des icônes */
+    height: 60px;
+  }
+}
+
+/* Responsivité pour les mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+  #contact h2 {
+    font-size: 24px; /* Réduction du titre */
+  }
+
+  #contact p {
+    font-size: 14px; /* Réduction du texte */
+  }
+
+  #contact .social-icons img {
+    width: 50px; /* Réduction des icônes */
+    height: 50px;
+  }
+
+  #contact {
+    padding: 15px; /* Moins de padding pour un meilleur ajustement */
+  }
+}
+
+  background-color: #883D11; /* Fond marron */
+  color: #fff; /* Texte blanc */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Barre de navigation */
+.nav-bar-contact {
+  background-color: #D1A401; /* Fond jaune */
+  padding: 15px 0;
+  margin-top: -40px;
+  margin-bottom: 20px;
+  margin-left:-20px ;
+  margin-right:-20px ;
+}
+
+.nav-bar-contact h2 {
+  color: #fff; /* Texte blanc */
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Contenu de la section */
+.contact-content p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espacement entre les icônes */
+}
+
+.social-icons img {
+  width: 60px; /* Taille des icônes (largeur et hauteur égales pour les carrés) */
+  height: 60px;
+  object-fit: contain;
+  border-radius: 5px; /* Coins légèrement arrondis */
+  transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.social-icons img:hover {
+  transform: scale(1.1); /* Agrandissement au survol */
+}
+
+
