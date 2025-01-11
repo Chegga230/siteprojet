@@ -54,8 +54,12 @@ nav ul li a {
 #accueil {
   padding: 100px 20px 20px; /* Ajout d'un padding-top pour éviter la superposition */
   text-align: center;
+<<<<<<< HEAD
   background-color: #883D11;
   color: #FFFFFF;
+=======
+  background-color: #ffffff; 
+>>>>>>> 3e6acc1f02d056a65b776bf0af29a4a6b77ddf50
 }
 
 #accueil h1 {
@@ -236,7 +240,13 @@ nav ul li a {
   }
 
   .contenu-a-propos .texte-centre p {
+<<<<<<< HEAD
     font-size: 1rem; /* Réduit légèrement la taille du texte */
+=======
+    color: #000000; /* Texte noir */
+    font-size: 1.8rem; /* Taille du texte */
+    line-height: 1.5; /* Espacement entre les lignes */
+>>>>>>> 3e6acc1f02d056a65b776bf0af29a4a6b77ddf50
   }
 }
 
@@ -286,8 +296,13 @@ nav ul li a {
   text-align: center;
 }
 
+<<<<<<< HEAD
 .photo img {
   width: 100%;   /* Assurez-vous que les images sont responsive */
+=======
+.article img {
+  width: 100%;  
+>>>>>>> 3e6acc1f02d056a65b776bf0af29a4a6b77ddf50
   height: auto;
   max-width: 200px; /* Limiter la taille des images */
   margin: 0 auto;
@@ -329,6 +344,16 @@ nav ul li a {
   }
 }
 
+<<<<<<< HEAD
+=======
+  background-color: #abaaaa; /* Fond gris foncé */
+  color: white; /* Texte blanc pour la section */
+  padding: 20px 0; /* Espacement autour du contenu */
+  text-align: center;
+  padding-bottom: -10px;
+}
+
+>>>>>>> 3e6acc1f02d056a65b776bf0af29a4a6b77ddf50
 /* Barre de navigation pour Nos Articles */
 .barre-navigation-nos-articles {
   background-color: rgb(253, 252, 252); /* Couleur blanche pour la barre */
@@ -337,8 +362,13 @@ nav ul li a {
   text-align: center; /* Centre le texte "Nos articles" */
   font-size: 18px; /* Taille du texte */
   font-weight: bold; /* Met en gras le texte */
+<<<<<<< HEAD
   border-bottom: 2px solid #333333; /* Optionnel : ajout d'une bordure pour la démarcation */
   margin-top: -85px;
+=======
+  border-bottom: 2px solid #333333; 
+  margin-top: -80px;
+>>>>>>> 3e6acc1f02d056a65b776bf0af29a4a6b77ddf50
 }
 
 /* Section "Événements" */
